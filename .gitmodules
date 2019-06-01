@@ -1,0 +1,3 @@
+[submodule "pymarl"]
+	path = pymarl
+	url = https://github.com/oxwhirl/pymarl
