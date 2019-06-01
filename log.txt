@@ -1,0 +1,368 @@
+❯ python -m run_qmix
+2019-05-03 17:21:24,314	WARNING worker.py:1337 -- WARNING: Not updating worker name since `setproctitle` is not installed. Install this with `pip install setproctitle` (or ray[debug]) to enable monitoring of worker processes.
+2019-05-03 17:21:24,317	INFO node.py:469 -- Process STDOUT and STDERR is being redirected to /tmp/ray/session_2019-05-03_17-21-24_12129/logs.
+2019-05-03 17:21:24,431	INFO services.py:407 -- Waiting for redis server at 127.0.0.1:19888 to respond...
+2019-05-03 17:21:24,558	INFO services.py:407 -- Waiting for redis server at 127.0.0.1:54835 to respond...
+2019-05-03 17:21:24,563	INFO services.py:804 -- Starting Redis shard with 1.72 GB max memory.
+2019-05-03 17:21:24,580	INFO node.py:483 -- Process STDOUT and STDERR is being redirected to /tmp/ray/session_2019-05-03_17-21-24_12129/logs.
+2019-05-03 17:21:24,582	INFO services.py:1427 -- Starting the Plasma object store with 2.58 GB memory using /tmp.
+2019-05-03 17:21:25,150	INFO tune.py:60 -- Tip: to resume incomplete experiments, pass resume='prompt' or resume=True to run()
+2019-05-03 17:21:25,150	INFO tune.py:211 -- Starting a new experiment.
+== Status ==
+Using FIFO scheduling algorithm.
+Resources requested: 0/8 CPUs, 0/0 GPUs
+Memory usage on this node: 6.3/8.6 GB
+
+== Status ==
+Using FIFO scheduling algorithm.
+Resources requested: 3/8 CPUs, 0/0 GPUs
+Memory usage on this node: 6.3/8.6 GB
+Result logdir: /Users/timpark/ray_results/qmix_sc2
+Number of trials: 1 ({'RUNNING': 1})
+RUNNING trials:
+ - QMIX_sc2_grouped_0:	RUNNING
+
+(pid=12144) 2019-05-03 17:21:28,396	INFO policy_evaluator.py:728 -- Built policy map: {'default_policy': <ray.rllib.agents.qmix.qmix_policy_graph.QMixPolicyGraph object at 0x1cd8654d68>}
+(pid=12144) 2019-05-03 17:21:28,396	INFO policy_evaluator.py:729 -- Built preprocessor map: {'default_policy': <ray.rllib.models.preprocessors.TupleFlatteningPreprocessor object at 0x1cd8654358>}
+(pid=12144) 2019-05-03 17:21:28,396	INFO policy_evaluator.py:343 -- Built filter map: {'default_policy': <ray.rllib.utils.filter.NoFilter object at 0x1cd8654320>}
+(pid=12149) 2019-05-03 17:21:31,250	INFO policy_evaluator.py:437 -- Generating sample batch of size 4
+(pid=12149) err = 3 /opt/blizzard/buildserver/data.noindex/repositories/sc2/branches/SC2.4.8.b/Game/Contrib/macteam/libs/ClampCursor/Contrib/mach_override/mach_override.c:244
+(pid=12149) err = 3 /opt/blizzard/buildserver/data.noindex/repositories/sc2/branches/SC2.4.8.b/Game/Contrib/macteam/libs/ClampCursor/Contrib/mach_override/mach_override.c:258
+(pid=12149) err = 3 /opt/blizzard/buildserver/data.noindex/repositories/sc2/branches/SC2.4.8.b/Game/Contrib/macteam/libs/ClampCursor/Contrib/mach_override/mach_override.c:263
+(pid=12150) err = 3 /opt/blizzard/buildserver/data.noindex/repositories/sc2/branches/SC2.4.8.b/Game/Contrib/macteam/libs/ClampCursor/Contrib/mach_override/mach_override.c:244
+(pid=12150) err = 3 /opt/blizzard/buildserver/data.noindex/repositories/sc2/branches/SC2.4.8.b/Game/Contrib/macteam/libs/ClampCursor/Contrib/mach_override/mach_override.c:258
+(pid=12150) err = 3 /opt/blizzard/buildserver/data.noindex/repositories/sc2/branches/SC2.4.8.b/Game/Contrib/macteam/libs/ClampCursor/Contrib/mach_override/mach_override.c:263
+(pid=12149) 2019-05-03 17:21:52,516	INFO sampler.py:308 -- Raw obs from env: { 0: { 'group_1': [ { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.167, max=1.0, mean=0.253)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.083, max=1.0, mean=0.258)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.083, max=1.0, mean=0.258)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.083, max=1.0, mean=0.248)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.16, max=1.0, mean=0.242)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.16, max=1.0, mean=0.242)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.167, max=1.0, mean=0.253)},
+(pid=12149)                     { 'action_mask': [ 0,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        1,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0,
+(pid=12149)                                        0],
+(pid=12149)                       'obs': np.ndarray((80,), dtype=float32, min=-0.167, max=1.0, mean=0.235)}]}}
+(pid=12149) 2019-05-03 17:21:52,517	INFO sampler.py:309 -- Info return from env: {0: {'group_1': {}}}
+(pid=12144) 2019-05-03 17:21:52,566	INFO trainer.py:330 -- Worker crashed during call to train(). To attempt to continue training without the failed worker, set `'ignore_worker_failures': True`.
+2019-05-03 17:21:52,642	ERROR trial_runner.py:494 -- Error processing event.
+Traceback (most recent call last):
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/tune/trial_runner.py", line 443, in _process_trial
+    result = self.trial_executor.fetch_result(trial)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/tune/ray_trial_executor.py", line 315, in fetch_result
+    result = ray.get(trial_future[0])
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/worker.py", line 2193, in get
+    raise value
+ray.exceptions.RayTaskError: ray_worker (pid=12144, host=Choong-MacBook.local)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/agents/trainer.py", line 333, in train
+    raise e
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/agents/trainer.py", line 322, in train
+    result = Trainable.train(self)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/tune/trainable.py", line 151, in train
+    result = self._train()
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/agents/dqn/dqn.py", line 261, in _train
+    self.optimizer.step()
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/optimizers/sync_batch_replay_optimizer.py", line 55, in step
+    [e.sample.remote() for e in self.remote_evaluators])
+ray.exceptions.RayTaskError: ray_worker (pid=12149, host=Choong-MacBook.local)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/models/preprocessors.py", line 58, in check_shape
+    if not self._obs_space.contains(observation):
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/gym/spaces/tuple.py", line 28, in contains
+    space.contains(part) for (space,part) in zip(self.spaces,x))
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/gym/spaces/tuple.py", line 28, in <genexpr>
+    space.contains(part) for (space,part) in zip(self.spaces,x))
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/gym/spaces/dict.py", line 59, in contains
+    if not space.contains(x[k]):
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/gym/spaces/box.py", line 45, in contains
+    return x.shape == self.shape and np.all(x >= self.low) and np.all(x <= self.high)
+AttributeError: 'list' object has no attribute 'shape'
+
+During handling of the above exception, another exception occurred:
+
+ray_worker (pid=12149, host=Choong-MacBook.local)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/evaluation/policy_evaluator.py", line 439, in sample
+    batches = [self.input_reader.next()]
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/evaluation/sampler.py", line 60, in next
+    batches = [self.get_data()]
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/evaluation/sampler.py", line 101, in get_data
+    item = next(self.rollout_provider)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/evaluation/sampler.py", line 317, in _env_runner
+    soft_horizon)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/evaluation/sampler.py", line 405, in _process_observations
+    policy_id).transform(raw_obs)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/models/preprocessors.py", line 192, in transform
+    self.check_shape(observation)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/rllib/models/preprocessors.py", line 65, in check_shape
+    "not a Python list.", observation)
+ValueError: ('Observation for a Box space should be an np.array, not a Python list.', [{'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.08361325,  0.00683594, -0.08333334,  1.        ,  1.        ,
+        0.18025067,  0.08333334, -0.15983073,  1.        ,  1.        ,
+        0.11785113,  0.08333334, -0.08333334,  1.        ,  1.        ,
+        0.08361325,  0.08333334, -0.00683594,  1.        ,  1.        ,
+        0.18025067,  0.15983073, -0.08333334,  1.        ,  1.        ,
+        0.23570226,  0.16666667, -0.16666667,  1.        ,  1.        ,
+        0.16666667,  0.16666667,  0.        ,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.08361325, -0.00683594,  0.08333334,  1.        ,  1.        ,
+        0.10818365,  0.0764974 , -0.0764974 ,  1.        ,  1.        ,
+        0.0764974 ,  0.0764974 ,  0.        ,  1.        ,  1.        ,
+        0.10818365,  0.0764974 ,  0.0764974 ,  1.        ,  1.        ,
+        0.1529948 ,  0.1529948 ,  0.        ,  1.        ,  1.        ,
+        0.18025067,  0.15983073, -0.08333334,  1.        ,  1.        ,
+        0.18025067,  0.15983073,  0.08333334,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.18025067, -0.08333334,  0.15983073,  1.        ,  1.        ,
+        0.10818365, -0.0764974 ,  0.0764974 ,  1.        ,  1.        ,
+        0.0764974 ,  0.        ,  0.0764974 ,  1.        ,  1.        ,
+        0.1529948 ,  0.        ,  0.1529948 ,  1.        ,  1.        ,
+        0.10818365,  0.0764974 ,  0.0764974 ,  1.        ,  1.        ,
+        0.08361325,  0.08333334, -0.00683594,  1.        ,  1.        ,
+        0.18025067,  0.08333334,  0.15983073,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.11785113, -0.08333334,  0.08333334,  1.        ,  1.        ,
+        0.0764974 , -0.0764974 ,  0.        ,  1.        ,  1.        ,
+        0.0764974 ,  0.        , -0.0764974 ,  1.        ,  1.        ,
+        0.0764974 ,  0.        ,  0.0764974 ,  1.        ,  1.        ,
+        0.0764974 ,  0.0764974 ,  0.        ,  1.        ,  1.        ,
+        0.11785113,  0.08333334, -0.08333334,  1.        ,  1.        ,
+        0.11785113,  0.08333334,  0.08333334,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.08361325, -0.08333334,  0.00683594,  1.        ,  1.        ,
+        0.10818365, -0.0764974 , -0.0764974 ,  1.        ,  1.        ,
+        0.1529948 ,  0.        , -0.1529948 ,  1.        ,  1.        ,
+        0.0764974 ,  0.        , -0.0764974 ,  1.        ,  1.        ,
+        0.10818365,  0.0764974 , -0.0764974 ,  1.        ,  1.        ,
+        0.18025067,  0.08333334, -0.15983073,  1.        ,  1.        ,
+        0.08361325,  0.08333334,  0.00683594,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.18025067, -0.15983073,  0.08333334,  1.        ,  1.        ,
+        0.1529948 , -0.1529948 ,  0.        ,  1.        ,  1.        ,
+        0.10818365, -0.0764974 , -0.0764974 ,  1.        ,  1.        ,
+        0.0764974 , -0.0764974 ,  0.        ,  1.        ,  1.        ,
+        0.10818365, -0.0764974 ,  0.0764974 ,  1.        ,  1.        ,
+        0.08361325,  0.00683594, -0.08333334,  1.        ,  1.        ,
+        0.08361325,  0.00683594,  0.08333334,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.23570226, -0.16666667,  0.16666667,  1.        ,  1.        ,
+        0.18025067, -0.15983073,  0.08333334,  1.        ,  1.        ,
+        0.08361325, -0.08333334,  0.00683594,  1.        ,  1.        ,
+        0.11785113, -0.08333334,  0.08333334,  1.        ,  1.        ,
+        0.18025067, -0.08333334,  0.15983073,  1.        ,  1.        ,
+        0.08361325, -0.00683594,  0.08333334,  1.        ,  1.        ,
+        0.16666667,  0.        ,  0.16666667,  1.        ,  1.        ],
+      dtype=float32)}, {'action_mask': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'obs': array([ 1.        ,  1.        ,  1.        ,  1.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  0.        ,
+        0.        ,  0.        ,  0.        ,  0.        ,  1.        ,
+        0.16666667, -0.16666667,  0.        ,  1.        ,  1.        ,
+        0.18025067, -0.15983073, -0.08333334,  1.        ,  1.        ,
+        0.18025067, -0.08333334, -0.15983073,  1.        ,  1.        ,
+        0.11785113, -0.08333334, -0.08333334,  1.        ,  1.        ,
+        0.08361325, -0.08333334, -0.00683594,  1.        ,  1.        ,
+        0.08361325, -0.00683594, -0.08333334,  1.        ,  1.        ,
+        0.16666667,  0.        , -0.16666667,  1.        ,  1.        ],
+      dtype=float32)}])
+
+
+2019-05-03 17:21:52,683	INFO ray_trial_executor.py:179 -- Destroying actor for trial QMIX_sc2_grouped_0. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2019-05-03 17:21:52,692	WARNING util.py:62 -- The `process_trial` operation took 0.10691404342651367 seconds to complete, which may be a performance bottleneck.
+== Status ==
+Using FIFO scheduling algorithm.
+Resources requested: 0/8 CPUs, 0/0 GPUs
+Memory usage on this node: 7.1/8.6 GB
+Result logdir: /Users/timpark/ray_results/qmix_sc2
+Number of trials: 1 ({'ERROR': 1})
+ERROR trials:
+ - QMIX_sc2_grouped_0:	ERROR, 1 failures: /Users/timpark/ray_results/qmix_sc2/QMIX_sc2_grouped_0_2019-05-03_17-21-25p0lagp39/error_2019-05-03_17-21-52.txt
+
+== Status ==
+Using FIFO scheduling algorithm.
+Resources requested: 0/8 CPUs, 0/0 GPUs
+Memory usage on this node: 7.1/8.6 GB
+Result logdir: /Users/timpark/ray_results/qmix_sc2
+Number of trials: 1 ({'ERROR': 1})
+ERROR trials:
+ - QMIX_sc2_grouped_0:	ERROR, 1 failures: /Users/timpark/ray_results/qmix_sc2/QMIX_sc2_grouped_0_2019-05-03_17-21-25p0lagp39/error_2019-05-03_17-21-52.txt
+
+Traceback (most recent call last):
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/timpark/Desktop/CH/project/smac/smac/examples/rllib/run_qmix.py", line 52, in <module>
+    "map_name": args.map_name,
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/tune/tune.py", line 311, in run_experiments
+    raise_on_failed_trial=raise_on_failed_trial)
+  File "/Users/timpark/anaconda3/envs/newenv/lib/python3.6/site-packages/ray/tune/tune.py", line 253, in run
+    raise TuneError("Trials did not complete", errored_trials)
+ray.tune.error.TuneError: ('Trials did not complete', [QMIX_sc2_grouped_0])
